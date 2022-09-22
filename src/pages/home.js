@@ -19,7 +19,7 @@ const Home = () => {
             </h1>
             <p className="font-body font-light text-md leading-loose mb-5 ">
               but also the leap into electronic typesetting, remaining
-              essentially unchanged. It was popularised in the 1960s with the
+              essentially unchanged.It was popularised in the 1960s with the
               release of Letraset sheets containing Lorem Ipsum passages, and
               more recently with desktop publishing software like Aldus
               PageMaker including versions of Lorem Ipsum.
