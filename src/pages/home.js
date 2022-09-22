@@ -1,3 +1,5 @@
+import React, { useRef, useState } from "react";
+import Slider from "react-slick";
 import hero from "../images/hero.png";
 import social from "../images/social.png";
 import web from "../images/web.png";
@@ -9,7 +11,17 @@ import logo2 from "../images/logos/logo-2.png";
 import logo4 from "../images/logos/logo-4.png";
 import logo5 from "../images/logos/logo-5.png";
 import omi from "../images/omni.png";
+import customer from "../images/customer-4.jpg";
+import CenterMode from "./slider";
 const Home = () => {
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    speed: 500,
+  };
   return (
     <div>
       <div className=" max-w-7xl px-5 mx-auto">
@@ -232,6 +244,31 @@ const Home = () => {
             </a>
           </p>
         </section>
+        <section className="what--say py-16 ">
+          <h1 className="font-body text-center font-semibold text-5xl mb-2">
+            Our client feedback
+          </h1>
+          <p className="font-body text-center font-light text-md leading-loose mb-14 ">
+            what they thonk about us
+          </p>
+          <div className=" max-w-2xl mx-auto text-center">
+            <img
+              className=" inline-block mb-6 rounded-full border-2 border-white"
+              alt="customer"
+              src={customer}
+            />
+            <h3 className="font-body font-midem text-2xl mb-4 leading-relaxed">
+              from classy cocktail parties to formal occasions and weddings. We
+              have your work wear covered too With flowy summer dresses and
+              lightweight
+            </h3>
+            <p className="font-body font-normal text-neutral-400 ">Jhon Deo</p>
+            <span className="font-body font-normal text-neutral-400 ">
+              Knudo customer
+            </span>
+          </div>
+        </section>
+        <CenterMode />
       </div>
     </div>
   );
