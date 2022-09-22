@@ -8,6 +8,7 @@ import logo3 from "../images/logos/logo-3.png";
 import logo2 from "../images/logos/logo-2.png";
 import logo4 from "../images/logos/logo-4.png";
 import logo5 from "../images/logos/logo-5.png";
+import omi from "../images/omni.png";
 const Home = () => {
   return (
     <div>
@@ -112,12 +113,124 @@ const Home = () => {
           </div>
         </section>
         <section className="my--project py-16 px-10">
-          <div className="flex justify-between">
+          <div className="flex justify-between items-center mb-6">
             <h2 className="font-body font-semibold text-4xl   ">My Project</h2>
             <p className="font-body font-light text-md leading-loose">
               my best project evre
             </p>
           </div>
+          <div className="grid grid-cols-2 gap-8">
+            <div className=" relative overflow-hidden rounded-md ">
+              <img alt="project" src={omi} />
+
+              <div className=" show--project absolute duration-300 bottom-0 tra pl-3 translate-y-48  w-full hover:translate-y-0">
+                <h2 className="font-body font-semibold text-4xl mb-2 pb-2 border-[#F2BE2F] mt-4 border-b-2 inline-block   ">
+                  Omni Resturant
+                </h2>
+                <ul className="ml-4 flex flex-col gap-2 mb-3">
+                  <li className="font-body text-lg font-medium">
+                    - ordring food
+                  </li>
+                  <li className="font-body text-lg font-medium">
+                    - booking table
+                  </li>
+                  <li className="font-body text-lg font-medium">
+                    - Lorem Ipsum passages
+                  </li>
+                  <li className="font-body text-lg font-medium">
+                    - release of Letraset sheets
+                  </li>
+                </ul>
+                <a className="inline-block font-body font-medium text-xl ml-4 px-5 py-1 rounded-full text-black mb-2 bg-[#F2BE2F]">
+                  vistit
+                </a>
+              </div>
+            </div>
+            <div className=" relative overflow-hidden rounded-md ">
+              <img alt="project" src={omi} />
+
+              <div className=" show--project absolute duration-300 bottom-0 tra pl-3 translate-y-48  w-full hover:translate-y-0">
+                <h2 className="font-body font-semibold text-4xl mb-2 pb-2 border-[#F2BE2F] mt-4 border-b-2 inline-block   ">
+                  Omni Resturant
+                </h2>
+                <ul className="ml-4 flex flex-col gap-2 mb-3">
+                  <li className="font-body text-lg font-medium">
+                    - ordring food
+                  </li>
+                  <li className="font-body text-lg font-medium">
+                    - booking table
+                  </li>
+                  <li className="font-body text-lg font-medium">
+                    - Lorem Ipsum passages
+                  </li>
+                  <li className="font-body text-lg font-medium">
+                    - release of Letraset sheets
+                  </li>
+                </ul>
+                <a className="inline-block font-body font-medium text-xl ml-4 px-5 py-1 rounded-full text-black mb-2 bg-[#F2BE2F]">
+                  vistit
+                </a>
+              </div>
+            </div>
+            <div className=" relative overflow-hidden rounded-md ">
+              <img alt="project" src={omi} />
+
+              <div className=" show--project absolute duration-300 bottom-0 tra pl-3 translate-y-48  w-full hover:translate-y-0">
+                <h2 className="font-body font-semibold text-4xl mb-2 pb-2 border-[#F2BE2F] mt-4 border-b-2 inline-block   ">
+                  Omni Resturant
+                </h2>
+                <ul className="ml-4 flex flex-col gap-2 mb-3">
+                  <li className="font-body text-lg font-medium">
+                    - ordring food
+                  </li>
+                  <li className="font-body text-lg font-medium">
+                    - booking table
+                  </li>
+                  <li className="font-body text-lg font-medium">
+                    - Lorem Ipsum passages
+                  </li>
+                  <li className="font-body text-lg font-medium">
+                    - release of Letraset sheets
+                  </li>
+                </ul>
+                <a className="inline-block font-body font-medium text-xl ml-4 px-5 py-1 rounded-full text-black mb-2 bg-[#F2BE2F]">
+                  vistit
+                </a>
+              </div>
+            </div>
+            <div className=" relative overflow-hidden rounded-md ">
+              <img alt="project" src={omi} />
+
+              <div className=" show--project absolute duration-300 bottom-0 tra pl-3 translate-y-48  w-full hover:translate-y-0">
+                <h2 className="font-body font-semibold text-4xl mb-2 pb-2 border-[#F2BE2F] mt-4 border-b-2 inline-block   ">
+                  Omni Resturant
+                </h2>
+                <ul className="ml-4 flex flex-col gap-2 mb-3">
+                  <li className="font-body text-lg font-medium">
+                    - ordring food
+                  </li>
+                  <li className="font-body text-lg font-medium">
+                    - booking table
+                  </li>
+                  <li className="font-body text-lg font-medium">
+                    - Lorem Ipsum passages
+                  </li>
+                  <li className="font-body text-lg font-medium">
+                    - release of Letraset sheets
+                  </li>
+                </ul>
+                <a className="inline-block font-body font-medium text-xl ml-4 px-5 py-1 rounded-full text-black mb-2 bg-[#F2BE2F]">
+                  vistit
+                </a>
+              </div>
+            </div>
+          </div>
+          <p className=" text-center font-body font-light text-md mt-5">
+            Check out some more of{" "}
+            <a className=" border-b-2 cursor-pointer duration-300  border-white hover:border-[#F2BE2F]">
+              my work
+            </a>
+          </p>
         </section>
       </div>
     </div>
