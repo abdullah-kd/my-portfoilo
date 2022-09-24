@@ -1,5 +1,16 @@
 import React, { useRef, useState } from "react";
-import Slider from "react-slick";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+// import required modules
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+
 import hero from "../images/hero.png";
 import social from "../images/social.png";
 import web from "../images/web.png";
@@ -12,16 +23,12 @@ import logo4 from "../images/logos/logo-4.png";
 import logo5 from "../images/logos/logo-5.png";
 import omi from "../images/omni.png";
 import customer from "../images/customer-4.jpg";
-import CenterMode from "./slider";
+import customer2 from "../images/customer-2.jpg";
+import customer3 from "../images/ben.jpg";
+
 const Home = () => {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
-    speed: 500,
-  };
+  const swiperNavNextRef = useRef(null);
+  const swiperNavPrevRef = useRef(null);
   return (
     <div>
       <div className=" max-w-7xl px-5 mx-auto">
@@ -251,24 +258,91 @@ const Home = () => {
           <p className="font-body text-center font-light text-md leading-loose mb-14 ">
             what they thonk about us
           </p>
-          <div className=" max-w-2xl mx-auto text-center">
-            <img
-              className=" inline-block mb-6 rounded-full border-2 border-white"
-              alt="customer"
-              src={customer}
-            />
-            <h3 className="font-body font-midem text-2xl mb-4 leading-relaxed">
-              from classy cocktail parties to formal occasions and weddings. We
-              have your work wear covered too With flowy summer dresses and
-              lightweight
-            </h3>
-            <p className="font-body font-normal text-neutral-400 ">Jhon Deo</p>
-            <span className="font-body font-normal text-neutral-400 ">
-              Knudo customer
-            </span>
-          </div>
+          <Swiper
+            cssMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={{
+              prevEl: swiperNavPrevRef.current,
+              nextEl: swiperNavNextRef.current,
+            }}
+            effect="fade"
+            mousewheel={true}
+            keyboard={true}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+            onInit={(swiper) => {
+              swiper.params.navigation.prevEl = swiperNavPrevRef.current;
+              swiper.params.navigation.nextEl = swiperNavNextRef.current;
+              swiper.navigation.init();
+              swiper.navigation.update();
+            }}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className=" max-w-2xl mx-auto text-center">
+                <img
+                  className=" inline-block mb-6 rounded-full border-2 border-white"
+                  alt="customer"
+                  src={customer}
+                />
+                <h3 className="font-body font-midem text-2xl mb-4 leading-relaxed">
+                  from classy cocktail parties to formal occasions and weddings.
+                  We have your work wear covered too With flowy summer dresses
+                  and lightweight
+                </h3>
+                <p className="font-body font-normal text-neutral-400 ">
+                  Jhon Deo
+                </p>
+                <span className="font-body font-normal text-neutral-400 mb-5 block ">
+                  Knudo customer
+                </span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className=" max-w-2xl mx-auto text-center">
+                <img
+                  className=" inline-block mb-6 rounded-full border-2 border-white"
+                  alt="customer"
+                  src={customer2}
+                />
+                <h3 className="font-body font-midem text-2xl mb-4 leading-relaxed">
+                  from classy cocktail parties to formal occasions and weddings.
+                  We have your work wear covered too With flowy summer why dont
+                  chosse.
+                </h3>
+                <p className="font-body font-normal text-neutral-400 ">
+                  Ahmad Barzan
+                </p>
+                <span className="font-body font-normal text-neutral-400 mb-5 block ">
+                  Knudo customer
+                </span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className=" max-w-2xl mx-auto text-center">
+                <img
+                  className=" inline-block mb-6 rounded-full border-2 border-white"
+                  alt="customer"
+                  src={customer3}
+                />
+                <h3 className="font-body font-midem text-2xl mb-4 leading-relaxed">
+                  from classy cocktail parties to formal occasions and weddings.
+                  We have your work wear covered too With flowy summer dresses
+                  and lightweight
+                </h3>
+                <p className="font-body font-normal text-neutral-400 ">
+                  Sarkawt Muhammad
+                </p>
+                <span className="font-body font-normal text-neutral-400 mb-5 block ">
+                  Knudo customer
+                </span>
+              </div>
+            </SwiperSlide>
+
+            <div className="swiprNavNext"></div>
+          </Swiper>
         </section>
-        <CenterMode />
       </div>
     </div>
   );
