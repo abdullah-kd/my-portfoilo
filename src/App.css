@@ -8,6 +8,7 @@
   background: linear-gradient(140deg, #333533 50%, #242423 50%);
   height: 170px;
   width: 200px;
+  z-index: 0;
 }
 .logo {
   height: 2rem;
@@ -26,4 +27,8 @@
   height: 7px !important;
   width: 21px !important;
   border-radius: 100px !important;
+}
+.icon {
+  font-size: 30px !important;
+  width: 30px !important;
 }

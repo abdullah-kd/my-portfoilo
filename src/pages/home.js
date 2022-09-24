@@ -10,6 +10,10 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 import hero from "../images/hero.png";
 import social from "../images/social.png";
@@ -25,6 +29,12 @@ import omi from "../images/omni.png";
 import customer from "../images/customer-4.jpg";
 import customer2 from "../images/customer-2.jpg";
 import customer3 from "../images/ben.jpg";
+import customer4 from "../images/steve.jpg";
+import customer5 from "../images/dave.jpg";
+import customer6 from "../images/customer-5.jpg";
+import customer7 from "../images/customer-1.jpg";
+import team from "../images/team.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const swiperNavNextRef = useRef(null);
@@ -342,6 +352,213 @@ const Home = () => {
 
             <div className="swiprNavNext"></div>
           </Swiper>
+        </section>
+        <section className="specal-clint py-12">
+          <div className="flex justify-between items-center mb-28">
+            <h2 className="font-body font-semibold text-4xl   ">
+              Meet Our Heroes{" "}
+            </h2>
+            <p className="font-body font-light text-md leading-loose">
+              A creative agency like no other
+            </p>
+          </div>
+          <div className=" grid grid-cols-2 gap-x-10 gap-y-28">
+            <div className="bg-[#333533] flex flex-col relative rounded-md   items-center">
+              <img
+                className=" inline-block rounded-full absolute  -translate-y-1/2  w-40 border-2 border-white"
+                alt="customer"
+                src={customer4}
+              />
+              <p className="font-body text-2xl font-medium mt-28 mb-2 ">
+                Sarkawt Muhammad
+              </p>
+              <span className="font-body font-normal text-neutral-400 mb-10 block ">
+                Knudo customer
+              </span>
+              <div className="flex gap-8 mb-10">
+                <Link className=" text-xl text-yellow-300 hover:text-gray-300">
+                  {" "}
+                  <FaFacebookF />
+                </Link>
+
+                <i className=" text-xl">
+                  {" "}
+                  <FaInstagram />
+                </i>
+                <i className=" text-xl">
+                  {" "}
+                  <FaTwitter />
+                </i>
+                <i className=" text-xl">
+                  {" "}
+                  <FaLinkedinIn />
+                </i>
+              </div>
+            </div>
+            <div className="bg-[#333533] flex flex-col relative rounded-md   items-center">
+              <img
+                className=" inline-block rounded-full absolute  -translate-y-1/2  w-40 border-2 border-white"
+                alt="customer"
+                src={customer5}
+              />
+              <p className="font-body text-2xl font-medium mt-28 mb-2 ">
+                Abdullah Subhi
+              </p>
+              <span className="font-body font-normal text-neutral-400 mb-10 block ">
+                Knudo customer
+              </span>
+              <div className="flex gap-8 mb-10">
+                <i className=" text-xl">
+                  {" "}
+                  <FaFacebookF />
+                </i>
+                <i className=" text-xl">
+                  {" "}
+                  <FaInstagram />
+                </i>
+                <i className=" text-xl">
+                  {" "}
+                  <FaTwitter />
+                </i>
+                <i className=" text-xl">
+                  {" "}
+                  <FaLinkedinIn />
+                </i>
+              </div>
+            </div>
+            <div className="bg-[#333533] flex flex-col relative rounded-md   items-center">
+              <img
+                className=" inline-block rounded-full absolute  -translate-y-1/2  w-40 border-2 border-white"
+                alt="customer"
+                src={customer6}
+              />
+              <p className="font-body text-2xl font-medium mt-28 mb-2 ">
+                Barzan Rzgar
+              </p>
+              <span className="font-body font-normal text-neutral-400 mb-10 block ">
+                Knudo customer
+              </span>
+              <div className="flex gap-8 mb-10">
+                <i className=" text-xl">
+                  {" "}
+                  <FaFacebookF />
+                </i>
+                <i className=" text-xl">
+                  {" "}
+                  <FaInstagram />
+                </i>
+                <i className=" text-xl">
+                  {" "}
+                  <FaTwitter />
+                </i>
+                <i className=" text-xl">
+                  {" "}
+                  <FaLinkedinIn />
+                </i>
+              </div>
+            </div>
+            <div className="bg-[#333533] flex flex-col relative rounded-md   items-center">
+              <img
+                className=" inline-block rounded-full absolute  -translate-y-1/2  w-40 border-2 border-white"
+                alt="customer"
+                src={customer7}
+              />
+              <p className="font-body text-2xl font-medium mt-28 mb-2 ">
+                Sara Subhi
+              </p>
+              <span className="font-body font-normal text-neutral-400 mb-10 block ">
+                Knudo customer
+              </span>
+              <div className="flex gap-8 mb-10">
+                <i className=" text-xl">
+                  {" "}
+                  <FaFacebookF />
+                </i>
+                <i className=" text-xl">
+                  {" "}
+                  <FaInstagram />
+                </i>
+                <i className=" text-xl">
+                  {" "}
+                  <FaTwitter />
+                </i>
+                <i className=" text-xl">
+                  {" "}
+                  <FaLinkedinIn />
+                </i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="range py-16">
+          <div className="grid grid-cols-2 gap-16 items-center">
+            <div>
+              <h1 className="font-body  font-semibold text-2xl mb-6">
+                Our Skills For Supper Project
+              </h1>
+              <div className="sliders flex flex-col gap-6 ">
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-body font-normal text-neutral-400  block ">
+                      Graphic Design
+                    </span>
+                    <span className="font-body font-normal text-neutral-400  block ">
+                      %80
+                    </span>
+                  </div>
+                  <div class=" w-full rounded-lg  h-[2px]">
+                    <div class="  w-4/5 bg-white rounded-lg h-[2px]"></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-body font-normal text-neutral-400  block ">
+                      Landing Genration
+                    </span>
+                    <span className="font-body font-normal text-neutral-400  block ">
+                      %40
+                    </span>
+                  </div>
+                  <div class=" w-full rounded-lg  h-[2px]">
+                    <div class="  w-2/5  bg-gray-400 rounded-lg h-[2px]"></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-body font-normal text-neutral-400  block ">
+                      Photoshop
+                    </span>
+                    <span className="font-body font-normal text-neutral-400  block ">
+                      %70
+                    </span>
+                  </div>
+                  <div class=" w-full rounded-lg  h-[2px]">
+                    <div class="   w-[70%]  bg-gray-200 rounded-lg h-[2px]"></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-body font-normal text-neutral-400  block ">
+                      Web Devlopment
+                    </span>
+                    <span className="font-body font-normal text-neutral-400  block ">
+                      %100
+                    </span>
+                  </div>
+                  <div class=" w-full rounded-lg  h-[2px]">
+                    <div class="  w-full bg-white rounded-lg h-[2px]"></div>
+                  </div>
+                </div>
+                <Link className=" w-fit btn font-medium mt-5  text-left  ">
+                  View Our Work
+                </Link>
+              </div>
+            </div>
+            <div className=" read-only: w-4/5">
+              <div className="   icon-bg pt-7 pl-7"></div>
+              <img className=" -mt-32 ml-10 z-10" src={team} alt="team" />
+            </div>
+          </div>
         </section>
       </div>
     </div>
