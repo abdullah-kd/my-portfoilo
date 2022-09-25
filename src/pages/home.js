@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,6 +11,9 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -20,11 +24,7 @@ import social from "../images/social.png";
 import web from "../images/web.png";
 import ui from "../images/ui.png";
 import support from "../images/support.png";
-import logo1 from "../images/logos/logo-1.png";
-import logo3 from "../images/logos/logo-3.png";
-import logo2 from "../images/logos/logo-2.png";
-import logo4 from "../images/logos/logo-4.png";
-import logo5 from "../images/logos/logo-5.png";
+
 import omi from "../images/omni.png";
 import customer from "../images/customer-4.jpg";
 import customer2 from "../images/customer-2.jpg";
@@ -34,15 +34,28 @@ import customer5 from "../images/dave.jpg";
 import customer6 from "../images/customer-5.jpg";
 import customer7 from "../images/customer-1.jpg";
 import team from "../images/team.jpg";
-import { Link } from "react-router-dom";
-
+import logo1 from "../images/logo-1.png";
+import logo2 from "../images/logo-2.png";
+import logo4 from "../images/logo-4.png";
+import logo5 from "../images/logo-5.png";
+import logo3 from "../images/logo-3.svg";
+import logo6 from "../images/logo-6.svg";
+import card1 from "../images/card-1.png";
+import card2 from "../images/card-2.png";
+import card3 from "../images/card-3.png";
+import card4 from "../images/card-4.png";
 const Home = () => {
   const swiperNavNextRef = useRef(null);
   const swiperNavPrevRef = useRef(null);
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+    });
+  }, []);
   return (
     <div>
-      <div className=" max-w-7xl px-5 mx-auto">
-        <section className="hero flex gap-14 py-20 justify-center items-center">
+      <div className=" max-w-7xl px-5 mx-auto ">
+        <section className="hero flex h-screen gap-14 py-20 justify-center items-center">
           <div className=" w-11/12">
             <h1 className="font-body font-semibold text-6xl mb-8">
               I am Abdullah
@@ -62,12 +75,35 @@ const Home = () => {
             <img alt="hero imgae" src={hero} />
           </div>
         </section>
-        <section className="servce px-32 py-16 lg:px-10 s:px-5 ">
+        <section className="py-16  lg:px-10 s:px-5">
+          <div className="flex justify-between items-center mb-28">
+            <h2 className="font-body font-semibold text-4xl   ">
+              You'll be in good company
+            </h2>
+            <p className="font-body font-light text-md leading-loose">
+              A creative agency like no other
+            </p>
+          </div>
+          <div className="grid grid-cols-3 gap-20 px-10 items-center place-items-center">
+            <img className="logo" alt="logo" src={logo6} />
+            <img className="logo" alt="logo" src={logo3} />
+            <img className="logo logo--3" alt="logo" src={logo1} />
+            <img className="logo" alt="logo" src={logo4} />
+            <img className="logo" alt="logo" src={logo5} />
+            <img className="logo  " alt="logo" src={logo2} />
+          </div>
+        </section>
+        <section className="servce px-32 py-16 lg:px-10 s:px-5 mx-auto ">
           <h1 className=" font-body font-semibold text-4xl mb-14 text-center">
             My Servce
           </h1>
           <div className="grid grid-cols-2 gap-14 md:grid-cols-1   ">
-            <div className="">
+            <div
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              className=""
+            >
               <div className="flex">
                 <div className="icon-bg pt-7 pl-7">
                   <img className="w-16" alt="web" src={web} />
@@ -82,7 +118,12 @@ const Home = () => {
                 desktop publishing software like Aldus PageMaker
               </p>
             </div>
-            <div className="">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              className=""
+            >
               <div className="flex">
                 <div className="icon-bg pt-7 pl-7">
                   <img className="w-16" alt="web" src={ui} />
@@ -129,18 +170,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="py-16  lg:px-10 s:px-5">
-          <h1 className=" font-body font-semibold text-md mb-6 text-center">
-            AS FEATURED IN
-          </h1>
-          <div className="flex justify-around">
-            <img className="logo" alt="logo" src={logo1} />
-            <img className="logo" alt="logo" src={logo3} />
-            <img className="logo" alt="logo" src={logo2} />
-            <img className="logo" alt="logo" src={logo4} />
-            <img className="logo" alt="logo" src={logo5} />
-          </div>
-        </section>
+
         <section className="my--project py-16 px-10">
           <div className="flex justify-between items-center mb-6">
             <h2 className="font-body font-semibold text-4xl   ">My Project</h2>
@@ -557,6 +587,49 @@ const Home = () => {
             <div className=" read-only: w-4/5">
               <div className="   icon-bg pt-7 pl-7"></div>
               <img className=" -mt-32 ml-10 z-10" src={team} alt="team" />
+            </div>
+          </div>
+        </section>
+        <section className="sumfun py-12">
+          <h1 className="font-body text-center  font-medum text-2xl mb-8">
+            Some Fun Facts
+          </h1>
+          <div className="px-10 grid grid-cols-2 gap-y-16 s:grid-cols-1">
+            <div className="flex items-center justify-center gap-3">
+              <img className=" w-20" alt="card" src={card4} />
+              <div>
+                <h2 className=" font-body font-medium mb-1 text-7xl">10</h2>
+                <span className="font-body font-normal text-neutral-400  block ">
+                  Years on market
+                </span>
+              </div>
+            </div>
+            <div className="flex items-center justify-center gap-3">
+              <img className=" w-20" alt="card" src={card2} />
+              <div>
+                <h2 className=" font-body font-medium mb-1 text-7xl">330+</h2>
+                <span className="font-body font-normal text-neutral-400  block ">
+                  Project done
+                </span>
+              </div>
+            </div>
+            <div className="flex items-center justify-center gap-3">
+              <img className=" w-20" alt="card" src={card3} />
+              <div>
+                <h2 className=" font-body font-medium mb-1 text-7xl">14</h2>
+                <span className="font-body font-normal text-neutral-400  block ">
+                  Hero's member
+                </span>
+              </div>
+            </div>
+            <div className="flex items-center justify-center gap-3">
+              <img className=" w-20" alt="card" src={card1} />
+              <div>
+                <h2 className=" font-body font-medium mb-1 text-7xl">700+</h2>
+                <span className="font-body font-normal text-neutral-400  block ">
+                  Cups of coffee
+                </span>
+              </div>
             </div>
           </div>
         </section>
