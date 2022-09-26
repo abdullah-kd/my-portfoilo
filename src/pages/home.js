@@ -81,15 +81,15 @@ const Home = () => {
           </div>
         </section>
         <section className="py-20  lg:px-10 s:px-5">
-          <div className="flex justify-between items-center mb-16">
-            <h2 className="font-body font-semibold text-4xl   ">
+          <div className="flex justify-between  mb-16 md:flex-col md:mb-8 ">
+            <h2 className="font-body font-semibold text-4xl  xs:text-3xl ">
               You'll be in good company
             </h2>
             <p className="font-body font-light text-md leading-loose">
               A creative agency like no other
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-20 px-10 items-center place-items-center">
+          <div className="grid grid-cols-3 gap-20 px-10 items-center place-items-center md:grid-cols-2 s:grid-cols-1 s:gap-10">
             <img className="logo" alt="logo" src={logo6} />
             <img className="logo" alt="logo" src={logo3} />
             <img className="logo logo--3" alt="logo" src={logo1} />
@@ -178,12 +178,14 @@ const Home = () => {
 
         <section className="my--project py-16 px-10">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="font-body font-semibold text-4xl   ">My Project</h2>
-            <p className="font-body font-light text-md leading-loose">
+            <h2 className="font-body font-semibold text-4xl  s:text-2xl  ">
+              My Project
+            </h2>
+            <p className="font-body font-light text-md leading-loose md:text-sm">
               my best project evre
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-1 ">
             <div className=" relative overflow-hidden rounded-md ">
               <img alt="project" src={omi} />
 
@@ -297,7 +299,7 @@ const Home = () => {
           </p>
         </section>
         <section className="what--say py-16 ">
-          <h1 className="font-body text-center font-semibold text-5xl mb-2">
+          <h1 className="font-body text-center font-semibold text-5xl mb-2 s:text-3xl">
             Our client feedback
           </h1>
           <p className="font-body text-center font-light text-md leading-loose mb-14 ">
@@ -331,7 +333,7 @@ const Home = () => {
                   alt="customer"
                   src={customer}
                 />
-                <h3 className="font-body font-midem text-2xl mb-4 leading-relaxed">
+                <h3 className="font-body font-midem text-2xl mb-4 leading-relaxed s:text-lg">
                   from classy cocktail parties to formal occasions and weddings.
                   We have your work wear covered too With flowy summer dresses
                   and lightweight
@@ -351,7 +353,7 @@ const Home = () => {
                   alt="customer"
                   src={customer2}
                 />
-                <h3 className="font-body font-midem text-2xl mb-4 leading-relaxed">
+                <h3 className="font-body font-midem text-2xl mb-4 leading-relaxed s:text-lg">
                   from classy cocktail parties to formal occasions and weddings.
                   We have your work wear covered too With flowy summer why dont
                   chosse.
@@ -371,7 +373,7 @@ const Home = () => {
                   alt="customer"
                   src={customer3}
                 />
-                <h3 className="font-body font-midem text-2xl mb-4 leading-relaxed">
+                <h3 className="font-body font-midem text-2xl mb-4 leading-relaxed s:text-lg">
                   from classy cocktail parties to formal occasions and weddings.
                   We have your work wear covered too With flowy summer dresses
                   and lightweight
@@ -404,7 +406,7 @@ const Home = () => {
                 alt="customer"
                 src={customer4}
               />
-              <p className="font-body text-2xl font-medium mt-28 mb-2 ">
+              <p className="font-body text-2xl font-medium mt-28 mb-2 s:mt-20 ">
                 Sarkawt Muhammad
               </p>
               <span className="font-body font-normal text-neutral-400 mb-10 block ">
@@ -436,7 +438,7 @@ const Home = () => {
                 alt="customer"
                 src={customer5}
               />
-              <p className="font-body text-2xl font-medium mt-28 mb-2 ">
+              <p className="font-body text-2xl font-medium mt-28 mb-2 s:mt-20 ">
                 Abdullah Subhi
               </p>
               <span className="font-body font-normal text-neutral-400 mb-10 block ">
@@ -467,7 +469,7 @@ const Home = () => {
                 alt="customer"
                 src={customer6}
               />
-              <p className="font-body text-2xl font-medium mt-28 mb-2 ">
+              <p className="font-body text-2xl font-medium mt-28 mb-2 s:mt-20 ">
                 Barzan Rzgar
               </p>
               <span className="font-body font-normal text-neutral-400 mb-10 block ">
@@ -498,7 +500,7 @@ const Home = () => {
                 alt="customer"
                 src={customer7}
               />
-              <p className="font-body text-2xl font-medium mt-28 mb-2 ">
+              <p className="font-body text-2xl font-medium mt-28 mb-2  s:mt-20">
                 Sara Subhi
               </p>
               <span className="font-body font-normal text-neutral-400 mb-10 block ">
@@ -599,38 +601,46 @@ const Home = () => {
           <h1 className="font-body text-center  font-medum text-2xl mb-8">
             Some Fun Facts
           </h1>
-          <div className="px-10 grid grid-cols-2 gap-y-16 s:grid-cols-1">
+          <div className="px-10  grid grid-cols-2 gap-y-16 place-items-center s:grid-cols-1">
             <div className="flex items-center justify-center gap-3">
-              <img className=" w-20" alt="card" src={card4} />
+              <img className=" w-20 s:w-16" alt="card" src={card4} />
               <div>
-                <h2 className=" font-body font-medium mb-1 text-7xl">10</h2>
+                <h2 className=" font-body font-medium mb-1 text-7xl s:text-5xl">
+                  10
+                </h2>
                 <span className="font-body font-normal text-neutral-400  block ">
                   Years on market
                 </span>
               </div>
             </div>
             <div className="flex items-center justify-center gap-3">
-              <img className=" w-20" alt="card" src={card2} />
+              <img className=" w-20 s:w-16" alt="card" src={card2} />
               <div>
-                <h2 className=" font-body font-medium mb-1 text-7xl">330+</h2>
+                <h2 className=" font-body font-medium mb-1 text-7xl s:text-5xl">
+                  330+
+                </h2>
                 <span className="font-body font-normal text-neutral-400  block ">
                   Project done
                 </span>
               </div>
             </div>
             <div className="flex items-center justify-center gap-3">
-              <img className=" w-20" alt="card" src={card3} />
+              <img className=" w-20 s:w-16" alt="card" src={card3} />
               <div>
-                <h2 className=" font-body font-medium mb-1 text-7xl">14</h2>
+                <h2 className=" font-body font-medium mb-1 text-7xl s:text-5xl">
+                  14
+                </h2>
                 <span className="font-body font-normal text-neutral-400  block ">
                   Hero's member
                 </span>
               </div>
             </div>
             <div className="flex items-center justify-center gap-3">
-              <img className=" w-20" alt="card" src={card1} />
+              <img className=" w-20 s:w-16" alt="card" src={card1} />
               <div>
-                <h2 className=" font-body font-medium mb-1 text-7xl">700+</h2>
+                <h2 className=" font-body font-medium mb-1 text-7xl s:text-5xl">
+                  700+
+                </h2>
                 <span className="font-body font-normal text-neutral-400  block ">
                   Cups of coffee
                 </span>
@@ -638,9 +648,9 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="grid grid-cols-2 items-center  gap-16 py-16 md:grid-cols-1 ">
+        <section className="grid grid-cols-2 items-center justify-center  gap-16 py-16 md:grid-cols-1 ">
           <div className="">
-            <p className="font-body text-2xl font-medium mb-10 ">
+            <p className="font-body text-2xl font-medium mb-10  xs:text-lg">
               Start Your Project With Us
             </p>
             <input
@@ -672,21 +682,21 @@ const Home = () => {
             </button>
           </div>
 
-          <div className="px-5 ">
+          <div className=" read-only: w-4/5">
             <div className="   icon-bg pt-7 pl-7"></div>
             <img className=" -mt-32 ml-10 z-10" src={team2} alt="team" />
           </div>
         </section>
         <section className="py-28">
-          <div className="flex justify-between items-center mb-12 s:flex-col s:justify-start;">
-            <h2 className="font-body font-semibold text-4xl   ">
-              Meet Our Heroes{" "}
+          <div className="flex justify-between gap-y-3 items-center mb-12 ">
+            <h2 className="font-body font-semibold text-4xl s:text-3xl   ">
+              Blogs
             </h2>
-            <p className="btn font-body font-medium text-lg  leading-loose">
+            <p className="btn font-body font-medium text-lg   leading-loose s:text-base">
               All Post
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-3 gap-10 md:grid-cols-2 s:grid-cols-1">
             <div className=" hover:bg-[#222] rounded-sm overflow-hidden">
               <img src={blog1} alt="blog" />
               <div className="p-5 bg-[#111] ">
@@ -732,16 +742,75 @@ const Home = () => {
           </div>
         </section>
         <section className="py-20 text-center">
-          <span className="font-body text-xl font-normal text-neutral-300  block ">
+          <span className="font-body text-xl font-normal text-neutral-300  block md:mb-4 ">
             Stay In Touch
           </span>
-          <h1 className=" font-mono font-bold  leading-[1.2]  text-[10rem] mb-6">
-            Ready To <br /> Talk
+          <h1 className=" tracking-tighter font-body font-bold  leading-[1.2]  text-9xl mb-6 md:text-7xl xs:text-5xl ">
+            Ready To Talk
           </h1>
           <span className="font-body text-xl font-normal text-neutral-300 mb-10 block ">
             Fell Free To Contact Us
           </span>
           <Link className=" btn text-lg">Contact Us</Link>
+        </section>
+        <section className="pt-28">
+          <div className="flex justify-between items-center mb-3 s:flex-col s:justify-start s:items-start s:gap-2 ">
+            <h2 className="font-body font-semibold text-3xl   ">Knud</h2>
+            <div className="flex gap-8 ">
+              <i className=" text-lg">
+                {" "}
+                <FaFacebookF />
+              </i>
+              <i className=" text-lg">
+                {" "}
+                <FaInstagram />
+              </i>
+              <i className=" text-lg">
+                {" "}
+                <FaTwitter />
+              </i>
+              <i className=" text-lg">
+                {" "}
+                <FaLinkedinIn />
+              </i>
+            </div>
+          </div>
+          <div className="flex justify-between  items-center s:flex-col s:items-start">
+            <div className=" w-1/2 s:w-full">
+              <h2 className="font-body text-neutral-400 font-semibold text-3xl mt-4 mb-8  ">
+                Knud is an award UI/UX designs and branding agency based in New
+                York, USA.
+              </h2>
+              <ul className="flex gap-3 mb-6">
+                <Link className=" font-body font-normal text-lg text-neutral-400 duration-300 hover:text-neutral-100">
+                  Home
+                </Link>
+                <Link className=" font-body font-normal text-lg text-neutral-400 duration-300 hover:text-neutral-100">
+                  About
+                </Link>
+                <Link className=" font-body font-normal text-lg text-neutral-400 duration-300 hover:text-neutral-100">
+                  Style Guide
+                </Link>
+                <Link className=" font-body font-normal text-lg text-neutral-400 duration-300 hover:text-neutral-100">
+                  Licensing
+                </Link>
+              </ul>
+            </div>
+            <div>
+              <span className="font-body text-lg font-normal text-neutral-300 mb-[2px] block ">
+                hello@knud.com
+              </span>
+              <span className="font-body text-lg font-normal text-neutral-300 block ">
+                +1(953) 214 3344
+              </span>
+            </div>
+          </div>
+          <p className="font-body  text-neutral-400 mt-4 ">
+            Knud by{" "}
+            <Link className="text-neutral-100   hover:text-white">
+              Abdullah
+            </Link>
+          </p>
         </section>
       </div>
     </div>

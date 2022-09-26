@@ -17,7 +17,7 @@
   padding: 0 10px;
 }
 .logo {
-  width: 50%;
+  @apply w-1/2 xs:w-3/4;
 }
 .logo--3 {
   width: 30%;
