@@ -80,8 +80,8 @@ const Home = () => {
             <img alt="hero imgae" src={hero} />
           </div>
         </section>
-        <section className="py-16  lg:px-10 s:px-5">
-          <div className="flex justify-between items-center mb-28">
+        <section className="py-20  lg:px-10 s:px-5">
+          <div className="flex justify-between items-center mb-16">
             <h2 className="font-body font-semibold text-4xl   ">
               You'll be in good company
             </h2>
@@ -526,7 +526,7 @@ const Home = () => {
           </div>
         </section>
         <section className="range  py-28">
-          <div className="grid grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-2 gap-16 items-center md:grid-cols-1 md:justify-center ">
             <div>
               <h1 className="font-body  font-semibold text-2xl mb-6">
                 Our Skills For Supper Project
@@ -638,7 +638,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="grid grid-cols-2 gap-16 py-16">
+        <section className="grid grid-cols-2 items-center  gap-16 py-16 md:grid-cols-1 ">
           <div className="">
             <p className="font-body text-2xl font-medium mb-10 ">
               Start Your Project With Us
@@ -672,7 +672,7 @@ const Home = () => {
             </button>
           </div>
 
-          <div className=" read-only: w-4/5">
+          <div className="px-5 ">
             <div className="   icon-bg pt-7 pl-7"></div>
             <img className=" -mt-32 ml-10 z-10" src={team2} alt="team" />
           </div>

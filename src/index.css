@@ -10,8 +10,10 @@
   box-sizing: border-box;
   color: white;
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   background-color: #000;
-  overflow-x: hidden;
 }
