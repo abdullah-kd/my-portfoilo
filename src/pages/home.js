@@ -34,6 +34,11 @@ import customer5 from "../images/dave.jpg";
 import customer6 from "../images/customer-5.jpg";
 import customer7 from "../images/customer-1.jpg";
 import team from "../images/team.jpg";
+import team2 from "../images/team-2.jpg";
+import blog1 from "../images/blog-1.jpg";
+
+import blog2 from "../images/blog-2.jpg";
+import blog3 from "../images/blog-3.jpg";
 import logo1 from "../images/logo-1.png";
 import logo2 from "../images/logo-2.png";
 import logo4 from "../images/logo-4.png";
@@ -384,7 +389,7 @@ const Home = () => {
           </Swiper>
         </section>
         <section className="specal-clint py-12">
-          <div className="flex justify-between items-center mb-28">
+          <div className="flex justify-between items-center mb-28 s:flex-col s:justify-start;">
             <h2 className="font-body font-semibold text-4xl   ">
               Meet Our Heroes{" "}
             </h2>
@@ -392,10 +397,10 @@ const Home = () => {
               A creative agency like no other
             </p>
           </div>
-          <div className=" grid grid-cols-2 gap-x-10 gap-y-28">
-            <div className="bg-[#333533] flex flex-col relative rounded-md   items-center">
+          <div className=" grid grid-cols-4 gap-x-10 gap-y-28 lg:grid-cols-2 s:grid-cols-1">
+            <div className="bg-[#111] flex flex-col relative rounded-md   items-center">
               <img
-                className=" inline-block rounded-full absolute  -translate-y-1/2  w-40 border-2 border-white"
+                className=" inline-block rounded-full absolute  -translate-y-1/2   border-2 border-white"
                 alt="customer"
                 src={customer4}
               />
@@ -425,9 +430,9 @@ const Home = () => {
                 </i>
               </div>
             </div>
-            <div className="bg-[#333533] flex flex-col relative rounded-md   items-center">
+            <div className="bg-[#111] flex flex-col relative rounded-md   items-center">
               <img
-                className=" inline-block rounded-full absolute  -translate-y-1/2  w-40 border-2 border-white"
+                className=" inline-block rounded-full absolute  -translate-y-1/2  border-2 border-white"
                 alt="customer"
                 src={customer5}
               />
@@ -456,9 +461,9 @@ const Home = () => {
                 </i>
               </div>
             </div>
-            <div className="bg-[#333533] flex flex-col relative rounded-md   items-center">
+            <div className="bg-[#111] flex flex-col relative rounded-md   items-center">
               <img
-                className=" inline-block rounded-full absolute  -translate-y-1/2  w-40 border-2 border-white"
+                className=" inline-block rounded-full absolute  -translate-y-1/2   border-2 border-white"
                 alt="customer"
                 src={customer6}
               />
@@ -487,9 +492,9 @@ const Home = () => {
                 </i>
               </div>
             </div>
-            <div className="bg-[#333533] flex flex-col relative rounded-md   items-center">
+            <div className="bg-[#111] flex flex-col relative rounded-md px-2   items-center ">
               <img
-                className=" inline-block rounded-full absolute  -translate-y-1/2  w-40 border-2 border-white"
+                className=" inline-block rounded-full absolute  -translate-y-1/2   border-2 border-white"
                 alt="customer"
                 src={customer7}
               />
@@ -520,7 +525,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="range py-16">
+        <section className="range  py-28">
           <div className="grid grid-cols-2 gap-16 items-center">
             <div>
               <h1 className="font-body  font-semibold text-2xl mb-6">
@@ -632,6 +637,111 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </section>
+        <section className="grid grid-cols-2 gap-16 py-16">
+          <div className="">
+            <p className="font-body text-2xl font-medium mb-10 ">
+              Start Your Project With Us
+            </p>
+            <input
+              className="block w-full mb-7  px-3 py-3 bg-[#000] rounded-md border-[1px]  border-gray-500 placeholder:text-gray-300 placeholder:text-lg placeholder:font-body"
+              type="text"
+              placeholder="Name*"
+            />
+            <input
+              className="block w-full mb-7  px-3 py-3 bg-[#000] rounded-md border-[1px]  border-gray-500 placeholder:text-gray-300 placeholder:text-lg placeholder:font-body"
+              type="email"
+              placeholder="Email*"
+            />
+            <input
+              className="block w-full mb-7  px-3 py-3 bg-[#000] rounded-md border-[1px]  border-gray-500 placeholder:text-gray-300 placeholder:text-lg placeholder:font-body"
+              type="text"
+              placeholder="Phone Number"
+            />
+            <input
+              className="block w-full mb-7  px-3 py-3 bg-[#000] rounded-md border-[1px]  border-gray-500 placeholder:text-gray-300 placeholder:text-lg placeholder:font-body"
+              type="url"
+              placeholder="Website URL*"
+            />
+            <textarea
+              className="block w-full mb-7  px-3 pb-24 pt-3 bg-[#000] rounded-md border-[1px]  border-gray-500 placeholder:text-gray-300 placeholder:text-lg placeholder:font-body"
+              placeholder="Project Details"
+            ></textarea>
+            <button className="btn text-xl w-full font-medium">
+              Send Project
+            </button>
+          </div>
+
+          <div className=" read-only: w-4/5">
+            <div className="   icon-bg pt-7 pl-7"></div>
+            <img className=" -mt-32 ml-10 z-10" src={team2} alt="team" />
+          </div>
+        </section>
+        <section className="py-28">
+          <div className="flex justify-between items-center mb-12 s:flex-col s:justify-start;">
+            <h2 className="font-body font-semibold text-4xl   ">
+              Meet Our Heroes{" "}
+            </h2>
+            <p className="btn font-body font-medium text-lg  leading-loose">
+              All Post
+            </p>
+          </div>
+          <div className="grid grid-cols-3 gap-10">
+            <div className=" hover:bg-[#222] rounded-sm overflow-hidden">
+              <img src={blog1} alt="blog" />
+              <div className="p-5 bg-[#111] ">
+                <Link className=" bg-[#F5CB5C] w-fit font-body font-medium text-[18px] hover:bg-[#F2BE2F] px-2 py-1  text-black rounded-full  leading-loose">
+                  Markiting
+                </Link>
+                <h2 className="font-body font-semibold text-3xl mt-4 mb-10  ">
+                  Curating a workplace that inspires all of us
+                </h2>
+                <span className="font-body text-base font-normal text-neutral-400 mb-5 block ">
+                  February 3, 2021
+                </span>
+              </div>
+            </div>
+            <div className=" hover:bg-[#222] rounded-sm overflow-hidden">
+              <img src={blog2} alt="blog" />
+              <div className="p-5 bg-[#111] ">
+                <Link className=" bg-[#F5CB5C] w-fit font-body font-medium text-[18px] hover:bg-[#F2BE2F] px-2 py-1  text-black rounded-full  leading-loose">
+                  Design
+                </Link>
+                <h2 className="font-body font-semibold text-3xl mt-4 mb-10  ">
+                  Designers who changed the web with Webflow
+                </h2>
+                <span className="font-body text-base font-normal text-neutral-400 mb-5 block ">
+                  jun 8, 2022
+                </span>
+              </div>
+            </div>
+            <div className=" hover:bg-[#222] rounded-sm overflow-hidden">
+              <img src={blog3} alt="blog" />
+              <div className="p-5 bg-[#111] ">
+                <Link className=" bg-[#F5CB5C] w-fit font-body font-medium text-[18px] hover:bg-[#F2BE2F] px-2 py-1  text-black rounded-full  leading-loose">
+                  Code
+                </Link>
+                <h2 className="font-body font-semibold text-3xl mt-4 mb-10  ">
+                  Communication between departments
+                </h2>
+                <span className="font-body text-base font-normal text-neutral-400 mb-5 block ">
+                  March 4, 2021
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="py-20 text-center">
+          <span className="font-body text-xl font-normal text-neutral-300  block ">
+            Stay In Touch
+          </span>
+          <h1 className=" font-mono font-bold  leading-[1.2]  text-[10rem] mb-6">
+            Ready To <br /> Talk
+          </h1>
+          <span className="font-body text-xl font-normal text-neutral-300 mb-10 block ">
+            Fell Free To Contact Us
+          </span>
+          <Link className=" btn text-lg">Contact Us</Link>
         </section>
       </div>
     </div>

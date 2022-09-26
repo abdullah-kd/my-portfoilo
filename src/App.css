@@ -5,7 +5,7 @@
   @apply bg-[#F5CB5C] px-6 py-2 text-black rounded-full border-none hover:bg-[#F2BE2F];
 }
 .icon-bg {
-  background: linear-gradient(140deg, #333533 50%, #242423 50%);
+  background: linear-gradient(140deg, #111 50%, #000 50%);
   height: 170px;
   width: 200px;
   z-index: 0;
